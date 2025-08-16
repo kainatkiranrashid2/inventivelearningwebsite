@@ -1,7 +1,17 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
+import Header from "./components/Header";
 
-const page = () => {
-  return <div>page</div>;
+const TeenEagle = () => {
+  useEffect(() => {
+    document.body.className = "teeneagle";
+  }, []);
+
+  return (
+    <>
+      <Header />
+    </>
+  );
 };
 
-export default page;
+export default TeenEagle;
