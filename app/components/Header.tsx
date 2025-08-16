@@ -90,20 +90,14 @@ const Header = () => {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 ">
+      <header className=" fixed top-0 left-0 right-0 z-50 ">
         {/* Main Navigation Bar */}
         <div className="container ">
-          <div className="md:mx-16">
+          <div className="">
             <div className="flex justify-between items-center h-16 sm:h-18 lg:h-20">
               {/* Logo - Left side on desktop, right side on mobile */}
-              <div className="flex items-center order-2 lg:order-1">
-                <Link href="/" className="flex items-center group">
-                  {/* Text logo - hidden on small mobile, shown on sm and up */}
-                  <div className="hidden sm:block mr-2 lg:mr-3 text-right">
-                    <h1 className="text-lg sm:text-xl lg:text-2xl font-semibold text-[#41c9eb] truncate ">
-                      InventiveLearning
-                    </h1>
-                  </div>
+              <div className="flex items-center order-2 lg:order-1 ">
+                <Link href="/" className="flex items-center gap-3 group">
                   <div className="relative flex-shrink-0">
                     <Image
                       src="/Inventive_Learning_LOGO.png"
@@ -113,25 +107,33 @@ const Header = () => {
                       className="h-8 w-8 sm:h-10 sm:w-10 lg:h-14 lg:w-14 transition-transform duration-200 ease-out group-hover:scale-105"
                     />
                   </div>
+                  {/* Text logo - hidden on small mobile, shown on sm and up */}
+                  <div className="hidden sm:block mr-2 lg:mr-3 text-right">
+                    <h1 className="text-lg sm:text-xl lg:text-2xl font-semibold text-[#41c9eb] truncate ">
+                      InventiveLearning
+                    </h1>
+                  </div>
                 </Link>
               </div>
 
               {/* Desktop Navigation - Hidden on mobile and tablet */}
               <nav
-                className="hidden xl:flex items-center space-x-8 order-2"
+                className="hidden  xl:flex items-center space-x-8 order-2"
                 ref={dropdownRef}>
                 {navigationItems.map((item) => (
                   <div key={item.name} className="relative">
                     {item.dropdown ? (
                       // Items with dropdown
-                      <div className="relative">
+                      <div className="relative ">
                         <button
                           onClick={() => handleDropdownToggle(item.name)}
                           onMouseEnter={() => setActiveDropdown(item.name)}
-                          className="flex items-center text-gray-900 text-base lg:text-lg font-semibold transition-colors duration-200 group hover:text-gray-600">
-                          <span className="relative z-10">{item.name}</span>
+                          className="flex items-center text-[#41c9eb] text-base lg:text-lg font-semibold ">
+                          <span className="relative z-10 text-[#41c9eb]">
+                            {item.name}
+                          </span>
                           <ChevronDown
-                            className={`ml-1 h-4 w-4 transition-transform duration-200 ${
+                            className={`ml-1 h-4 w-4 text-[#41c9eb] transition-transform duration-200 ${
                               activeDropdown === item.name ? "rotate-180" : ""
                             }`}
                           />
@@ -162,7 +164,7 @@ const Header = () => {
                       // Regular navigation items
                       <Link
                         href={item.href}
-                        className="relative text-gray-900 text-base lg:text-lg font-medium transition-colors duration-200 group hover:text-gray-600">
+                        className="relative text-[#41c9eb] text-base lg:text-lg font-medium transition-colors duration-200 group ">
                         <span className="relative z-10">{item.name}</span>
                         {/* Underline effect */}
                         <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#41c9eb] transition-all duration-200 group-hover:w-full"></div>

@@ -1,38 +1,20 @@
 import React from "react";
 
 const Header = () => {
-  const videoStyles = {
-    // Mobile and tablet: show full video with proper aspect ratio
-    width: "100%",
-    height: "auto",
-    aspectRatio: "16/9",
-
-    // Large screens: fill entire viewport (your working solution)
-    "@media (min-width: 1024px)": {
-      position: "absolute",
-      top: "50%",
-      left: "50%",
-      transform: "translate(-50%, -50%)",
-      width: "max(100vw, 177.78vh)",
-      height: "max(100vh, 56.25vw)",
-      aspectRatio: "unset",
-    },
-  };
-
   return (
-    <div className="w-full fixed top-8 md:top-0 left-0 overflow-hidden bg-black">
-      <div className="relative w-full h-auto lg:h-screen flex items-center justify-center">
-        <iframe
-          src="https://player.vimeo.com/video/1005956748?autoplay=1&muted=1&autopause=0&controls=0&loop=1&quality=1080p&background=1"
-          className="w-full lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2"
-          style={videoStyles}
-          frameBorder="0"
-          allow="autoplay; fullscreen"
-          allowFullScreen
-          title="Vimeo Video"
-        />
+    <section className=" ">
+      <div className="container">
+        <div className="flex flex-col items-center justify-center h-[400px] md:h-screen text-center">
+          <h1 className="text-[32px] sm:text-[40px] md:text-[44px] lg:text-[48px] xl:text-[56px] 2xl:text-[64px] text-[#41c9eb] font-semibold ">
+            Soaring Beyond Limits
+          </h1>
+          <h3 className="text-[20px] sm:text-[26px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[44px] text-[#41c9eb] font-semibold md:max-w-3xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl">
+            Empowering Pakistan’s youth to rise as leaders, innovators, and
+            change makers
+          </h3>
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
