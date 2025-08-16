@@ -103,7 +103,7 @@ const Header = () => {
                 <Link href="/" className="flex items-center group">
                   {/* Text logo - hidden on small mobile, shown on sm and up */}
                   <div className="hidden sm:block mr-2 lg:mr-3 text-right">
-                    <h1 className="text-lg sm:text-xl lg:text-2xl font-semibold text-[#41c9eb] truncate">
+                    <h1 className="text-lg sm:text-xl lg:text-2xl font-semibold text-[#41c9eb] truncate ">
                       InventiveLearning
                     </h1>
                   </div>
@@ -131,7 +131,7 @@ const Header = () => {
                         <button
                           onClick={() => handleDropdownToggle(item.name)}
                           onMouseEnter={() => setActiveDropdown(item.name)}
-                          className="flex items-center text-gray-900 text-base lg:text-lg font-medium transition-colors duration-200 group hover:text-gray-600">
+                          className="flex items-center text-gray-900 text-base lg:text-lg font-semibold transition-colors duration-200 group hover:text-gray-600">
                           <span className="relative z-10">{item.name}</span>
                           <ChevronDown
                             className={`ml-1 h-4 w-4 transition-transform duration-200 ${
