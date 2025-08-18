@@ -82,7 +82,7 @@ const About = () => {
                 <div className="text-4xl mb-4 group-hover:scale-125 group-hover:rotate-12 transition-all duration-500">
                   {stat.icon}
                 </div>
-                <div className="text-[32px] md:text-[36px] font-black text-[#0FA4AF] mb-3 group-hover:text-[#164e63] transition-colors duration-300">
+                <div className="text-[32px] md:text-[36px] font-bold text-[#0FA4AF] mb-3 group-hover:text-[#164e63] transition-colors duration-300">
                   {stat.number}
                 </div>
                 <div className="text-[15px] md:text-[17px] text-[#475569] font-bold tracking-wide uppercase">
@@ -132,7 +132,7 @@ const About = () => {
                   {feature.icon}
                 </div>
 
-                <h3 className="text-[24px] md:text-[26px] text-[#003135] font-black mb-6 tracking-tight">
+                <h3 className="text-[24px] md:text-[26px] text-[#003135] font-bold mb-6 tracking-tight">
                   {feature.title}
                 </h3>
 
@@ -147,7 +147,7 @@ const About = () => {
         {/* Modern Age Categories Section */}
         <div className="mb-24">
           <div className="text-center mb-16">
-            <h3 className="text-[40px] sm:text-[48px] md:text-[56px] font-black text-[#003135] mb-6 tracking-tight">
+            <h3 className="text-[40px] sm:text-[48px] md:text-[56px] font-bold text-[#003135] mb-6 tracking-tight">
               Three{" "}
               <span className="bg-gradient-to-r from-[#0FA4AF] to-[#164e63] bg-clip-text text-transparent">
                 Age Categories
@@ -195,7 +195,7 @@ const About = () => {
                   <div className="text-4xl mb-6 group-hover:scale-125 transition-transform duration-500">
                     {category.icon}
                   </div>
-                  <h4 className="text-[28px] md:text-[32px] font-black mb-4 tracking-tight">
+                  <h4 className="text-[28px] md:text-[32px] font-bold mb-4 tracking-tight">
                     {category.category}
                   </h4>
                   <div className="text-[20px] font-bold mb-6 text-[#AFDDE5] tracking-wide">
@@ -214,7 +214,7 @@ const About = () => {
             <div className="relative flex items-start">
               <div className="text-3xl mr-6 mt-2 filter drop-shadow-lg">💡</div>
               <div>
-                <h4 className="text-[22px] md:text-[24px] text-[#003135] font-black mb-4 tracking-tight">
+                <h4 className="text-[22px] md:text-[24px] text-[#003135] font-bold mb-4 tracking-tight">
                   Flexible Category Placement
                 </h4>
                 <p className="text-[17px] text-[#475569] leading-relaxed font-medium">
@@ -233,7 +233,7 @@ const About = () => {
         {/* Modern Competition Journey */}
         <div className="mb-24">
           <div className="text-center mb-16">
-            <h3 className="text-[40px] sm:text-[48px] md:text-[56px] font-black text-[#003135] mb-6 tracking-tight">
+            <h3 className="text-[40px] sm:text-[48px] md:text-[56px] font-bold text-[#003135] mb-6 tracking-tight">
               Your Journey to{" "}
               <span className="bg-gradient-to-r from-[#0FA4AF] to-[#164e63] bg-clip-text text-transparent">
                 Excellence
@@ -261,9 +261,9 @@ const About = () => {
                     <div
                       className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-3xl flex items-center justify-center mr-6
                       group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg">
-                      <span className="text-3xl font-black">1</span>
+                      <span className="text-3xl font-bold">1</span>
                     </div>
-                    <h4 className="text-[28px] md:text-[32px] font-black tracking-tight">
+                    <h4 className="text-[28px] md:text-[32px] font-bold tracking-tight">
                       First Round (Preliminaries)
                     </h4>
                   </div>
@@ -301,9 +301,9 @@ const About = () => {
                     <div
                       className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-3xl flex items-center justify-center mr-6
                       group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg">
-                      <span className="text-3xl font-black">2</span>
+                      <span className="text-3xl font-bold">2</span>
                     </div>
-                    <h4 className="text-[28px] md:text-[32px] font-black tracking-tight">
+                    <h4 className="text-[28px] md:text-[32px] font-bold tracking-tight">
                       Global Finals
                     </h4>
                   </div>
@@ -333,7 +333,7 @@ const About = () => {
         {/* Modern Recognition & Rewards Section */}
         <div className="mb-24">
           <div className="text-center mb-16">
-            <h3 className="text-[40px] sm:text-[48px] md:text-[56px] font-black text-[#003135] mb-6 tracking-tight">
+            <h3 className="text-[40px] sm:text-[48px] md:text-[56px] font-bold text-[#003135] mb-6 tracking-tight">
               Recognition &{" "}
               <span className="bg-gradient-to-r from-[#0FA4AF] to-[#164e63] bg-clip-text text-transparent">
                 Rewards
@@ -354,7 +354,7 @@ const About = () => {
                   <div className="text-5xl mb-6 group-hover:scale-125 transition-transform duration-500 filter drop-shadow-lg">
                     🏆
                   </div>
-                  <h4 className="text-[26px] md:text-[30px] text-[#003135] font-black mb-6 tracking-tight">
+                  <h4 className="text-[26px] md:text-[30px] text-[#003135] font-bold mb-6 tracking-tight">
                     Certificates & Recognition
                   </h4>
                 </div>
@@ -383,7 +383,7 @@ const About = () => {
                   <div className="text-5xl mb-6 group-hover:scale-125 transition-transform duration-500 filter drop-shadow-lg">
                     🎓
                   </div>
-                  <h4 className="text-[26px] md:text-[30px] text-[#003135] font-black mb-6 tracking-tight">
+                  <h4 className="text-[26px] md:text-[30px] text-[#003135] font-bold mb-6 tracking-tight">
                     Academic Incentives
                   </h4>
                 </div>
@@ -421,7 +421,7 @@ const About = () => {
               🎓 School Registration Required
             </div>
 
-            <h4 className="text-[36px] sm:text-[42px] md:text-[48px] text-[#003135] font-black mb-8 tracking-tight">
+            <h4 className="text-[36px] sm:text-[42px] md:text-[48px] text-[#003135] font-bold mb-8 tracking-tight">
               Ready to Elevate Your Students?
             </h4>
 
@@ -434,7 +434,7 @@ const About = () => {
             </p>
 
             <div className="mb-12">
-              <h5 className="text-[22px] md:text-[24px] text-[#003135] font-black mb-8 tracking-tight">
+              <h5 className="text-[22px] md:text-[24px] text-[#003135] font-bold mb-8 tracking-tight">
                 What Registered Schools Receive:
               </h5>
               <div className="grid sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
@@ -463,7 +463,7 @@ const About = () => {
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <button
                 className="group relative px-12 py-5 bg-gradient-to-r from-[#164e63] via-[#0e7490] to-[#0FA4AF]
-                  text-white font-black text-[19px] rounded-2xl transition-all duration-500 
+                  text-white font-bold text-[19px] rounded-2xl transition-all duration-500 
                     hover:shadow-2xl hover:shadow-[#0FA4AF]/40 hover:scale-110 overflow-hidden border-2 border-white/20">
                 <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <span className="relative z-10 flex items-center tracking-wide">
@@ -484,7 +484,7 @@ const About = () => {
               </button>
 
               <button
-                className="px-10 py-5 text-[#024950] font-black text-[17px] border-3 border-[#024950] 
+                className="px-10 py-5 text-[#024950] font-bold text-[17px] border-3 border-[#024950] 
                 rounded-2xl hover:bg-[#024950] hover:text-white transition-all duration-500 
                 hover:shadow-lg hover:scale-105 tracking-wide">
                 Download Brochure
