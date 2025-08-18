@@ -44,7 +44,7 @@ const Header = () => {
           <p
             className="text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 
             text-[#024950] font-medium mb-12 max-w-5xl leading-relaxed">
-            Uplifting Pakistani teens through mentorship, recognition, and
+            Uplifting Pakistani students through mentorship, recognition, and
             <span className="text-[#003135] font-semibold">
               {" "}
               global opportunities
