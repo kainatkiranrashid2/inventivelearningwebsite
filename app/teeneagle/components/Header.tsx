@@ -54,7 +54,7 @@ const Header = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 items-center">
             <button
-              className="group relative px-8 py-4 bg-gradient-to-r from-[#164e63] to-[#0e7490]
+              className="group relative px-8 py-4 bg-[#964734]
               text-white font-semibold text-[18px] rounded-2xl shadow-xl shadow-[#964734]/30
               hover:shadow-2xl hover:shadow-[#964734]/40 hover:scale-105 
               transition-all duration-300 overflow-hidden min-w-[200px]">
@@ -73,9 +73,6 @@ const Header = () => {
                   />
                 </svg>
               </span>
-              <div
-                className="absolute inset-0 bg-gradient-to-r from-[#164e63] to-[#0e7490] 
-                opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </button>
 
             <button
