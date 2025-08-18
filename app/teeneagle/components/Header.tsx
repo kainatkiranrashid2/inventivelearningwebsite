@@ -44,10 +44,10 @@ const Header = () => {
           <p
             className="text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 
             text-[#024950] font-medium mb-12 max-w-5xl leading-relaxed">
-            Uplifting Pakistani students through mentorship, recognition, and
+            Empowering Pakistan’s youth to rise as leaders, innovators, and
             <span className="text-[#003135] font-semibold">
               {" "}
-              global opportunities
+              change makers.
             </span>
           </p>
 
