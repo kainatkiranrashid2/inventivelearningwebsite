@@ -90,7 +90,7 @@ const Header = () => {
 
   return (
     <>
-      <header className=" fixed top-0 left-0 right-0 z-50 ">
+      <header className="bg-[#003135] fixed top-0 left-0 right-0 z-50 ">
         {/* Main Navigation Bar */}
         <div className="container ">
           <div className="">

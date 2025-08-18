@@ -3,7 +3,7 @@
 @theme {
   --font-family-sans: "Nunito Sans", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --color-body-bg: #F5F5F5;
+  --color-body-bg: #003135;
 
   --breakpoint-xs: 475px;
   --breakpoint-sm: 640px;
