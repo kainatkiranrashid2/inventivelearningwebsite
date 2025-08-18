@@ -23,7 +23,7 @@ const Header = () => {
       ],
     },
     {
-      name: "Waicy",
+      name: "WAICY",
       href: "/waicy",
       dropdown: [
         { name: "Home", href: "/waicy" },
