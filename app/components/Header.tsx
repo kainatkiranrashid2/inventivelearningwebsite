@@ -92,7 +92,7 @@ const Header = () => {
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
-          isScrolled ? "bg-[#024950] shadow-md" : "bg-[#AFDDE5]"
+          isScrolled ? "bg-[#AFDDE5] shadow-md" : "bg-[#AFDDE5]"
         }`}>
         {/* Main Navigation Bar */}
         <div className="container">
