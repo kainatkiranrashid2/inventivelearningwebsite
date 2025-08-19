@@ -16,11 +16,11 @@ const Header = () => {
         <div className="flex flex-col items-center justify-center min-h-[600px] lg:min-h-screen text-center px-4 py-20">
           {/* Floating badge */}
           <div
-            className="inline-flex items-center px-6 py-3 bg-white/20 backdrop-blur-md rounded-full 
-            text-[#003135] font-semibold text-sm mb-8 border border-white/30 shadow-lg
+            className="inline-flex mt-5 items-center px-6 py-3 bg-white/20 backdrop-blur-md rounded-full 
+            text-white font-semibold text-sm mb-8 border border-white/30 shadow-lg
             hover:bg-white/30 transition-all duration-300">
             <svg
-              className="w-5 h-5 mr-2 text-[#0FA4AF]"
+              className="w-5 h-5 mr-2 text-white"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24">
@@ -37,9 +37,9 @@ const Header = () => {
           {/* Main heading with animated text */}
           <h1
             className="text-[36px] sm:text-[44px] md:text-[52px] lg:text-[60px] xl:text-[68px] 2xl:text-[76px] 
-            text-[#003135] font-bold leading-tight mb-6 max-w-6xl">
+            text-white font-bold leading-tight mb-6 max-w-6xl">
             Pakistan&apos;s Future is
-            <span className="block bg-gradient-to-r from-[#164e63] to-[#0e7490] bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-[#164e63] to-[#0e7490] bg-clip-text text-white ">
               Taking Flight
             </span>
           </h1>
@@ -47,12 +47,9 @@ const Header = () => {
           {/* Subtitle */}
           <p
             className="text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 
-            text-[#024950] font-medium mb-12 max-w-5xl leading-relaxed">
+            text-white font-medium mb-12 max-w-5xl leading-relaxed">
             Empowering Pakistan’s youth to rise as leaders, innovators, and
-            <span className="text-[#003135] font-semibold">
-              {" "}
-              change makers.
-            </span>
+            <span className="text-white font-semibold"> change makers.</span>
           </p>
 
           {/* CTA Buttons */}
@@ -80,7 +77,7 @@ const Header = () => {
             </button>
 
             <button
-              className="px-8 py-4 bg-white/20 backdrop-blur-md text-[#003135] font-semibold 
+              className="px-8 py-4 bg-white/20 backdrop-blur-md text-white font-semibold 
               text-[18px] rounded-2xl border-2 border-white/40 hover:bg-white/30 hover:border-white/60
               transition-all duration-300 min-w-[200px]">
               Learn More
@@ -90,26 +87,26 @@ const Header = () => {
           {/* Floating stats */}
           <div className="grid grid-cols-3 gap-8 mt-16 max-w-2xl">
             <div className="text-center">
-              <div className="text-[32px] md:text-[40px] font-bold text-[#003135] mb-2">
+              <div className="text-[32px] md:text-[40px] font-bold text-white mb-2">
                 8-18
               </div>
-              <div className="text-[14px] md:text-[16px] text-[#024950] font-medium">
+              <div className="text-[14px] md:text-[16px] text-white font-medium">
                 Age Range
               </div>
             </div>
             <div className="text-center">
-              <div className="text-[32px] md:text-[40px] font-bold text-[#003135] mb-2">
+              <div className="text-[32px] md:text-[40px] font-bold text-white mb-2">
                 Global
               </div>
-              <div className="text-[14px] md:text-[16px] text-[#024950] font-medium">
+              <div className="text-[14px] md:text-[16px] text-white font-medium">
                 Recognition
               </div>
             </div>
             <div className="text-center">
-              <div className="text-[32px] md:text-[40px] font-bold text-[#003135] mb-2">
+              <div className="text-[32px] md:text-[40px] font-bold text-white mb-2">
                 2026
               </div>
-              <div className="text-[14px] md:text-[16px] text-[#024950] font-medium">
+              <div className="text-[14px] md:text-[16px] text-white font-medium">
                 Next Round
               </div>
             </div>
