@@ -2,7 +2,11 @@ import React from "react";
 
 const Header = () => {
   return (
-    <section className="relative bg-gradient-to-br from-[#AFDDE5] via-[#AFDDE5] to-[#0FA4AF]/30 overflow-hidden">
+    <section
+      className="relative  bg-gradient-to-br bg-cover bg-center  from-[#AFDDE5] via-[#AFDDE5] to-[#0FA4AF]/30 overflow-hidden"
+      style={{
+        backgroundImage: "url('/images/aboutteeneagle/pakistanfuture.png')",
+      }}>
       {/* Animated background elements */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-white/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 animate-pulse"></div>
       <div className="absolute bottom-0 right-0 w-80 h-80 bg-[#0FA4AF]/20 rounded-full blur-2xl translate-x-1/3 translate-y-1/3"></div>

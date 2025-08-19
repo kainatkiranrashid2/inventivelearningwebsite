@@ -130,6 +130,8 @@ const About = () => {
             {
               icon: "🤝",
               title: "Expert Partnership",
+              image: "/images/aboutteeneagle/partnership.png",
+
               description:
                 "Inventive Learning serves as Pakistan's official representative, providing comprehensive support from registration to global finals preparation.",
               gradient: "from-[#0e7490]/10 to-[#AFDDE5]/20",
@@ -271,9 +273,9 @@ const About = () => {
               <Image
                 src="/images/aboutteeneagle/teeneagle.png"
                 alt="TeenEagle Competition"
-                width={128}
-                height={128}
-                className="w-32 h-32 mx-auto rounded-full shadow-lg p-4  border-4 border-white"
+                width={100}
+                height={100}
+                className="w-40 h-auto mx-auto rounded-full shadow-lg p-4  border-4 border-white"
                 priority
               />
             </div>
