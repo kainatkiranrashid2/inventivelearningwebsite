@@ -3,12 +3,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="relative bg-gradient-to-br from-slate-50 via-white to-slate-50 py-20 lg:py-32 overflow-hidden">
-      {/* Enhanced Background elements */}
-      <div className="overflow-hidden absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-[#AFDDE5]/30 to-[#0FA4AF]/20 rounded-full blur-3xl translate-x-1/3 -translate-y-1/3 animate-pulse"></div>
-      <div className="overflow-hidden absolute bottom-0 left-0 w-[500px] h-[500px] bg-gradient-to-tr from-[#164e63]/20 to-[#0e7490]/10 rounded-full blur-3xl -translate-x-1/2 translate-y-1/2 animate-pulse delay-1000"></div>
-      <div className="overflow-hidden absolute top-1/2 left-1/2 w-72 h-72 bg-gradient-to-r from-[#0FA4AF]/10 to-transparent rounded-full blur-2xl -translate-x-1/2 -translate-y-1/2"></div>
-
+    <section className="relative bg-[#edf5fbf8]   py-20 lg:py-32 overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
         {/* Hero Section */}
         <div className="text-center mb-24">
