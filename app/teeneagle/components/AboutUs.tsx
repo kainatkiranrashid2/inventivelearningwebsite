@@ -439,7 +439,7 @@ const About = () => {
 
         {/* Modern Registration CTA */}
         <div
-          className="relative bg-gradient-to-br from-[#AFDDE5]/30 via-white/50 to-[#0FA4AF]/20 backdrop-blur-2xl 
+          className="relative bg-gradient-to-br mb-24 from-[#AFDDE5]/30 via-white/50 to-[#0FA4AF]/20 backdrop-blur-2xl 
           rounded-3xl p-12 lg:p-20 border border-white/40 text-center shadow-2xl overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-3xl"></div>
 
@@ -520,6 +520,86 @@ const About = () => {
                 hover:shadow-lg hover:scale-105 tracking-wide">
                 Download Brochure
               </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Detailed Global Finals Section */}
+        <div className="">
+          <div className="text-center mb-16">
+            <h3 className="text-[40px] sm:text-[48px] md:text-[56px] font-bold text-[#003135] mb-6 tracking-tight">
+              <span className="bg-gradient-to-r from-[#0FA4AF] to-[#164e63] bg-clip-text text-transparent">
+                TeenEagle Global Finals
+              </span>
+            </h3>
+            <p className="text-[20px] md:text-[22px] text-[#475569] max-w-4xl mx-auto font-medium">
+              An extraordinary week of international competition and cultural
+              exchange
+            </p>
+          </div>
+
+          <div className="relative bg-gradient-to-br from-[#164e63] via-[#0e7490] to-[#0FA4AF] p-12 lg:p-16 rounded-3xl text-white shadow-2xl overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-3xl"></div>
+
+            <div className="relative z-10">
+              {/* Main Description */}
+              <div className="text-center mb-12">
+                <div className="inline-block p-4 bg-white/20 backdrop-blur-sm rounded-2xl mb-8">
+                  <span className="text-4xl">🌍</span>
+                </div>
+                <p className="text-[20px] md:text-[22px] font-medium leading-relaxed max-w-4xl mx-auto">
+                  The <strong>Global Finals</strong> is an annual international
+                  event hosted in countries such as the
+                  <strong> United Kingdom, United States, and Thailand</strong>,
+                  bringing together top-performing students for a week of{" "}
+                  <strong>competition, learning, and cultural exchange</strong>.
+                </p>
+              </div>
+
+              {/* Competition Activities */}
+              <div className="grid lg:grid-cols-2 gap-12 items-start">
+                <div>
+                  <h4 className="text-[26px] md:text-[30px] font-bold mb-8 flex items-center">
+                    <span className="w-3 h-3 bg-[#AFDDE5] rounded-full mr-4"></span>
+                    Finalists compete in:
+                  </h4>
+                  <div className="space-y-6 text-[18px] md:text-[20px] font-medium">
+                    {[
+                      { activity: "Knowledge quiz", icon: "🧠" },
+                      { activity: "Persuasive speaking (debate)", icon: "🎤" },
+                      { activity: "Writing tasks", icon: "✍️" },
+                      { activity: "Spelling bee", icon: "🐝" },
+                    ].map((item, index) => (
+                      <div
+                        key={index}
+                        className="flex items-center bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/20">
+                        <span className="text-2xl mr-4">{item.icon}</span>
+                        <span>{item.activity}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div>
+                  <h4 className="text-[26px] md:text-[30px] font-bold mb-8 flex items-center">
+                    <span className="w-3 h-3 bg-[#AFDDE5] rounded-full mr-4"></span>
+                    Experience Highlights:
+                  </h4>
+                  <div className="space-y-6 text-[18px] md:text-[20px] font-medium">
+                    {[
+                      "Week-long international event",
+                      "Cultural exchange with global peers",
+                      "Professional competition environment",
+                      "Educational workshops and seminars",
+                    ].map((item, index) => (
+                      <div key={index} className="flex items-start">
+                        <div className="w-3 h-3 bg-[#AFDDE5] rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                        <span>{item}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
