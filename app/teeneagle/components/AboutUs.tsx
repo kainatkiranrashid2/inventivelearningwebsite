@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const About = () => {
@@ -18,9 +19,7 @@ const About = () => {
             <span className="w-2 h-2 bg-[#0FA4AF] rounded-full mr-3 animate-pulse"></span>
             🏆 Global English Competition
           </div>
-          <h2
-            className="text-[48px] sm:text-[56px] md:text-[64px] lg:text-[72px] xl:text-[84px] 
-            text-[#003135] font-bold mb-8 leading-none tracking-tight">
+          <h2 className="text-[48px] sm:text-[56px] md:text-[64px] lg:text-[72px] xl:text-[84px] text-[#003135] font-bold mb-8 leading-none tracking-tight">
             Meet{" "}
             <span className="relative">
               <span className="bg-gradient-to-r from-[#164e63] via-[#0e7490] to-[#0FA4AF] bg-clip-text text-transparent">
@@ -29,6 +28,20 @@ const About = () => {
               <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-[#164e63] to-[#0FA4AF] rounded-full opacity-30"></div>
             </span>
           </h2>
+
+          {/* Add TeenEagle branding image here */}
+          <div className="mt-4 mb-12 relative">
+            <Image
+              src="/images/aboutteeneagle/header.jpg"
+              alt="TeenEagle students at Statue of Liberty"
+              width={1200}
+              height={600}
+              className="w-full max-w-4xl mx-auto rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-700"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-3xl"></div>
+          </div>
+
           <p
             className="text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] 
             text-[#475569] font-medium max-w-5xl mx-auto leading-relaxed">
@@ -98,6 +111,8 @@ const About = () => {
           {[
             {
               icon: "📚",
+              image: "/images/aboutteeneagle/classroom.jpg", // Use Image 2 or 3
+
               title: "Resource-Based Learning",
               description:
                 "Curated books and films build comprehensive language skills through engaging, age-appropriate content that makes learning enjoyable and effective.",
@@ -105,6 +120,8 @@ const About = () => {
             },
             {
               icon: "⚖️",
+              image: "/images/aboutteeneagle/classroom-2.jpg", // Use Image 2 or 3
+
               title: "Fair Competition",
               description:
                 "Three distinct age categories ensure every student competes with peers at their level, creating equal opportunities for success and recognition.",
@@ -126,10 +143,12 @@ const About = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-white/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-3xl"></div>
 
               <div className="relative z-10">
-                <div
-                  className="text-5xl mb-8 group-hover:scale-125 group-hover:rotate-12 
-                  transition-all duration-500 inline-block filter drop-shadow-lg">
-                  {feature.icon}
+                <div className="mb-8 overflow-hidden rounded-2xl">
+                  <img
+                    src={feature.image}
+                    alt={feature.title}
+                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
                 </div>
 
                 <h3 className="text-[24px] md:text-[26px] text-[#003135] font-bold mb-6 tracking-tight">
@@ -167,6 +186,8 @@ const About = () => {
                 description:
                   "For younger students with age-appropriate materials",
                 gradient: "from-[#164e63] to-[#0e7490]",
+                image: "/images/aboutteeneagle/classroom.jpg",
+
                 icon: "🌱",
               },
               {
