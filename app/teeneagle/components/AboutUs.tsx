@@ -266,6 +266,19 @@ const About = () => {
             </p>
           </div>
 
+          <div className="text-center ">
+            <div className="inline-block  p-4 bg-gradient-to-br from-[#164e63] to-[#0FA4AF] rounded-full shadow-lg">
+              <Image
+                src="/images/aboutteeneagle/teeneagle.png"
+                alt="TeenEagle Competition"
+                width={128}
+                height={128}
+                className="w-32 h-32 mx-auto rounded-full shadow-lg p-4  border-4 border-white"
+                priority
+              />
+            </div>
+          </div>
+
           <div className="grid lg:grid-cols-2 gap-12 relative">
             {/* Connection line */}
             <div className="hidden lg:block absolute top-1/2 left-1/2 w-24 h-1 bg-gradient-to-r from-[#0FA4AF] to-[#164e63] rounded-full transform -translate-x-1/2 -translate-y-1/2 z-10"></div>
