@@ -9,9 +9,8 @@ const About = () => {
         <div className="text-center mb-24">
           <div
             className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#AFDDE5]/20 to-[#0FA4AF]/20 
-            backdrop-blur-md rounded-full text-[#024950] font-semibold text-sm mb-8 border border-white/30 
+            backdrop-blur-md rounded-full text-[#024950] font-semibold text-sm md:text-md lg:text-lg mb-8 border border-white/30 
             shadow-lg hover:shadow-xl transition-all duration-300">
-            <span className="w-2 h-2 bg-[#0FA4AF] rounded-full mr-3 animate-pulse"></span>
             🏆 Global English Competition
           </div>
           <h2 className="text-[48px] sm:text-[56px] md:text-[64px] lg:text-[72px] xl:text-[84px] text-[#003135] font-bold mb-8 leading-none tracking-tight">
@@ -354,7 +353,7 @@ const About = () => {
                   <div className="space-y-6 text-[17px] md:text-[19px] font-medium">
                     {[
                       "Students scoring 40%+ qualify for Global Finals",
-                      "International venues: UK, USA, Thailand",
+                      "TeenEagle Global Finals take place in a new location every year, with venues rotating between Asia, Europe, and the U.S.—offering students a truly international experience.",
                       "Week-long event with competition & cultural exchange",
                       "Knowledge quiz, persuasive speaking, writing & spelling bee",
                     ].map((item, index) => (
@@ -456,14 +455,6 @@ const About = () => {
           <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-3xl"></div>
 
           <div className="relative z-10">
-            <div
-              className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-[#964734]/20 to-[#964734]/10 backdrop-blur-md 
-              rounded-full text-[#964734] font-bold text-sm mb-10 border border-[#964734]/30 shadow-lg
-              hover:shadow-xl hover:scale-105 transition-all duration-300">
-              <span className="w-3 h-3 bg-[#964734] rounded-full mr-4 animate-pulse"></span>
-              🎓 School Registration Required
-            </div>
-
             <h4 className="text-[36px] sm:text-[42px] md:text-[48px] text-[#003135] font-bold mb-8 tracking-tight">
               Ready to Elevate Your Students?
             </h4>
@@ -530,7 +521,7 @@ const About = () => {
                 className="px-10 py-5 text-[#024950] font-bold text-[17px] border-3 border-[#024950] 
                 rounded-2xl hover:bg-[#024950] hover:text-white transition-all duration-500 
                 hover:shadow-lg hover:scale-105 tracking-wide">
-                Download Brochure
+                Download Guidebook
               </button>
             </div>
           </div>
@@ -576,19 +567,23 @@ const About = () => {
                     Finalists compete in:
                   </h4>
                   <div className="space-y-6 text-[18px] md:text-[20px] font-medium">
-                    {[
-                      { activity: "Knowledge quiz", icon: "🧠" },
-                      { activity: "Persuasive speaking (debate)", icon: "🎤" },
-                      { activity: "Writing tasks", icon: "✍️" },
-                      { activity: "Spelling bee", icon: "🐝" },
-                    ].map((item, index) => (
-                      <div
-                        key={index}
-                        className="flex items-center bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/20">
-                        <span className="text-2xl mr-4">{item.icon}</span>
-                        <span>{item.activity}</span>
-                      </div>
-                    ))}
+                    <div className="space-y-6 text-[18px] md:text-[20px] font-medium">
+                      {[
+                        { activity: "Knowledge quiz", icon: "🧠" },
+                        {
+                          activity: "Persuasive speaking (debate)",
+                          icon: "🎤",
+                        },
+                        { activity: "Writing tasks", icon: "✍️" },
+                        { activity: "Spelling bee", icon: "🐝" },
+                      ].map((item, index) => (
+                        <div key={index} className="flex items-center">
+                          <div className="w-2 h-2 bg-[#AFDDE5] rounded-full  mr-4 flex-shrink-0"></div>
+                          <span className="text-2xl mr-2">{item.icon}</span>
+                          <span>{item.activity}</span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
 
@@ -604,8 +599,8 @@ const About = () => {
                       "Professional competition environment",
                       "Educational workshops and seminars",
                     ].map((item, index) => (
-                      <div key={index} className="flex items-start">
-                        <div className="w-3 h-3 bg-[#AFDDE5] rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                      <div key={index} className="flex items-center">
+                        <div className="w-2 h-2 bg-[#AFDDE5] rounded-full  mr-4 flex-shrink-0"></div>
                         <span>{item}</span>
                       </div>
                     ))}
