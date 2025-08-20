@@ -567,23 +567,19 @@ const About = () => {
                     Finalists compete in:
                   </h4>
                   <div className="space-y-6 text-[18px] md:text-[20px] font-medium">
-                    <div className="space-y-6 text-[18px] md:text-[20px] font-medium">
-                      {[
-                        { activity: "Knowledge quiz", icon: "🧠" },
-                        {
-                          activity: "Persuasive speaking (debate)",
-                          icon: "🎤",
-                        },
-                        { activity: "Writing tasks", icon: "✍️" },
-                        { activity: "Spelling bee", icon: "🐝" },
-                      ].map((item, index) => (
-                        <div key={index} className="flex items-center">
-                          <div className="w-2 h-2 bg-[#AFDDE5] rounded-full  mr-4 flex-shrink-0"></div>
-                          <span className="text-2xl mr-2">{item.icon}</span>
-                          <span>{item.activity}</span>
-                        </div>
-                      ))}
-                    </div>
+                    {[
+                      { activity: "Knowledge quiz", icon: "🧠" },
+                      { activity: "Persuasive speaking (debate)", icon: "🎤" },
+                      { activity: "Writing tasks", icon: "✍️" },
+                      { activity: "Spelling bee", icon: "🐝" },
+                    ].map((item, index) => (
+                      <div
+                        key={index}
+                        className="flex items-center bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/20">
+                        {/* <span className="text-2xl mr-4">{item.icon}</span> */}
+                        <span>{item.activity}</span>
+                      </div>
+                    ))}
                   </div>
                 </div>
 
@@ -599,9 +595,10 @@ const About = () => {
                       "Professional competition environment",
                       "Educational workshops and seminars",
                     ].map((item, index) => (
-                      <div key={index} className="flex items-center">
-                        <div className="w-2 h-2 bg-[#AFDDE5] rounded-full  mr-4 flex-shrink-0"></div>
-                        <span>{item}</span>
+                      <div
+                        key={index}
+                        className="flex items-center bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/20">
+                        <span className="">{item}</span>
                       </div>
                     ))}
                   </div>
