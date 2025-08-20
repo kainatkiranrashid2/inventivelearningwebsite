@@ -6,7 +6,7 @@ const About = () => {
     <section className="relative bg-[#edf5fbf8]   py-20 lg:py-32 overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
         {/* Hero Section */}
-        <div className="text-center mb-24">
+        <div className=" text-center mb-8 md:mb-12 lg:mb-16">
           <div
             className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#AFDDE5]/20 to-[#0FA4AF]/20 
             backdrop-blur-md rounded-full text-[#024950] font-semibold text-sm md:text-md lg:text-lg mb-8 border border-white/30 
@@ -37,7 +37,7 @@ const About = () => {
           </div>
 
           <p
-            className="text-[22px] sm:text-[24px] md:text-[26px] lg:text-[28px] 
+            className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] 2xl:text-[26px] 
             text-[#475569] font-medium max-w-5xl mx-auto leading-relaxed">
             A global English Olympiad for students aged 8–18, designed to
             enhance language skills in a fun, competitive, and intellectually
@@ -86,10 +86,10 @@ const About = () => {
               <div
                 className={`absolute inset-0 bg-gradient-to-br ${stat.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-700 rounded-3xl`}></div>
               <div className="relative z-10">
-                <div className="text-4xl mb-4 group-hover:scale-125 group-hover:rotate-12 transition-all duration-500">
+                <div className="text-4xl mb-2 md:mb-4 group-hover:scale-125 group-hover:rotate-12 transition-all duration-500">
                   {stat.icon}
                 </div>
-                <div className="text-[32px] md:text-[36px] font-bold text-[#0FA4AF] mb-3 group-hover:text-[#164e63] transition-colors duration-300">
+                <div className="text-[28px] md:text-[36px] font-bold text-[#0FA4AF] mb-2 md:mb-3 group-hover:text-[#164e63] transition-colors duration-300">
                   {stat.number}
                 </div>
                 <div className="text-[15px] md:text-[17px] text-[#475569] font-bold tracking-wide uppercase">
@@ -163,7 +163,7 @@ const About = () => {
 
         {/* Modern Age Categories Section */}
         <div className="mb-24">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8 md:mb-12 lg:mb-16">
             <h3 className="text-[40px] sm:text-[48px] md:text-[56px] font-bold text-[#003135] mb-6 tracking-tight">
               Three{" "}
               <span className="bg-gradient-to-r from-[#0FA4AF] to-[#164e63] bg-clip-text text-transparent">
@@ -224,10 +224,10 @@ const About = () => {
                       className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                   </div>
-                  <h4 className="text-[28px] md:text-[32px] font-bold mb-4 tracking-tight">
+                  <h4 className="text-[28px] md:text-[32px] font-bold md:mb-4 tracking-tight">
                     {category.category}
                   </h4>
-                  <div className="text-[20px] font-bold mb-6 text-[#AFDDE5] tracking-wide">
+                  <div className="text-[20px] font-bold md:mb-6  text-[#AFDDE5] tracking-wide">
                     {category.ageRange}
                   </div>
                   <p className="text-[17px] leading-relaxed font-medium">
@@ -261,7 +261,7 @@ const About = () => {
 
         {/* Modern Competition Journey */}
         <div className="mb-24">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8 md:mb-12 lg:mb-16">
             <h3 className="text-[40px] sm:text-[48px] md:text-[56px] font-bold text-[#003135] mb-6 tracking-tight">
               Your Journey to{" "}
               <span className="bg-gradient-to-r from-[#0FA4AF] to-[#164e63] bg-clip-text text-transparent">
@@ -374,7 +374,7 @@ const About = () => {
 
         {/* Modern Recognition & Rewards Section */}
         <div className="mb-24">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8 md:mb-12 lg:mb-16">
             <h3 className="text-[40px] sm:text-[48px] md:text-[56px] font-bold text-[#003135] mb-6 tracking-tight">
               Recognition &{" "}
               <span className="bg-gradient-to-r from-[#0FA4AF] to-[#164e63] bg-clip-text text-transparent">
@@ -529,7 +529,7 @@ const About = () => {
 
         {/* Detailed Global Finals Section */}
         <div className="">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8 md:mb-12 lg:mb-16">
             <h3 className="text-[40px] sm:text-[48px] md:text-[56px] font-bold text-[#003135] mb-6 tracking-tight">
               <span className="bg-gradient-to-r from-[#0FA4AF] to-[#164e63] bg-clip-text text-transparent">
                 TeenEagle Global Finals
@@ -541,7 +541,7 @@ const About = () => {
             </p>
           </div>
 
-          <div className="relative bg-gradient-to-br from-[#164e63] via-[#0e7490] to-[#0FA4AF] p-12 lg:p-16 rounded-3xl text-white shadow-2xl overflow-hidden">
+          <div className="relative bg-gradient-to-br from-[#164e63] via-[#0e7490] to-[#0FA4AF] p-6 lg:p-16 rounded-3xl text-white shadow-2xl overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-3xl"></div>
 
             <div className="relative z-10">
@@ -550,7 +550,7 @@ const About = () => {
                 <div className="inline-block p-4 bg-white/20 backdrop-blur-sm rounded-2xl mb-8">
                   <span className="text-4xl">🌍</span>
                 </div>
-                <p className="text-[20px] md:text-[22px] font-medium leading-relaxed max-w-4xl mx-auto">
+                <p className="text-[20px] text-left md:text-[22px] font-medium leading-relaxed max-w-4xl mx-auto">
                   The <strong>Global Finals</strong> is an annual international
                   event hosted in countries such as the
                   <strong> United Kingdom, United States, and Thailand</strong>,
@@ -560,13 +560,13 @@ const About = () => {
               </div>
 
               {/* Competition Activities */}
-              <div className="grid lg:grid-cols-2 gap-12 items-start">
+              <div className="grid lg:grid-cols-2 gap-6 md:gap-12 items-start">
                 <div>
-                  <h4 className="text-[26px] md:text-[30px] font-bold mb-8 flex items-center">
-                    <span className="w-3 h-3 bg-[#AFDDE5] rounded-full mr-4"></span>
+                  <h4 className="text-[24px] sm:text-[26px] md:text-[30px] font-bold mb-8 flex items-center">
+                    <span className="w-3 h-3 hidden md:block bg-[#AFDDE5] rounded-full mr-4"></span>
                     Finalists compete in:
                   </h4>
-                  <div className="space-y-6 text-[18px] md:text-[20px] font-medium">
+                  <div className="space-y-6 text-[16px] sm:text-[18px] md:text-[20px] font-medium">
                     {[
                       { activity: "Knowledge quiz", icon: "🧠" },
                       { activity: "Persuasive speaking (debate)", icon: "🎤" },
@@ -584,8 +584,8 @@ const About = () => {
                 </div>
 
                 <div>
-                  <h4 className="text-[26px] md:text-[30px] font-bold mb-8 flex items-center">
-                    <span className="w-3 h-3 bg-[#AFDDE5] rounded-full mr-4"></span>
+                  <h4 className="text-[26px] md:text-[30px] w-full font-bold mb-8 flex items-center">
+                    <span className="w-3 h-3 bg-[#AFDDE5]   hidden md:block rounded-full mr-4"></span>
                     Experience Highlights:
                   </h4>
                   <div className="space-y-6 text-[18px] md:text-[20px] font-medium">
