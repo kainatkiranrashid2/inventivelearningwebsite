@@ -334,7 +334,7 @@ const About = () => {
             {/* Global Finals */}
             <div className="group relative">
               <div
-                className="relative bg-gradient-to-r from-[#164e63] via-[#0e7490] to-[#0FA4AF] p-12 rounded-3xl text-white 
+                className="relative bg-gradient-to-r from-[#164e63] via-[#0e7490] to-[#0FA4AF] p-6 md:p-12 rounded-3xl text-white 
                 shadow-2xl hover:shadow-4xl hover:scale-105 transition-all duration-700 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
 
@@ -357,13 +357,9 @@ const About = () => {
                       "Week-long event with competition & cultural exchange",
                       "Knowledge quiz, persuasive speaking, writing & spelling bee",
                     ].map((item, index) => (
-                      <div
-                        key={index}
-                        className="flex items-start group-hover:translate-x-2 transition-transform duration-500"
-                        style={{ transitionDelay: `${index * 100}ms` }}>
-                        <div className="w-3 h-3 bg-[#AFDDE5] rounded-full mt-3 mr-4 flex-shrink-0 shadow-lg"></div>
+                      <li key={index}>
                         <span>{item}</span>
-                      </div>
+                      </li>
                     ))}
                   </div>
                 </div>
@@ -407,10 +403,9 @@ const About = () => {
                     "Medal certificates (Gold, Silver, Bronze) for high achievers",
                     "Top 5 students in each category receive 20%–100% fee discounts for Global Finals",
                   ].map((item, index) => (
-                    <div key={index} className="flex items-start">
-                      <div className="w-3 h-3 bg-gradient-to-r from-[#0FA4AF] to-[#164e63] rounded-full mt-3 mr-4 flex-shrink-0 shadow-lg"></div>
+                    <li key={index}>
                       <span>{item}</span>
-                    </div>
+                    </li>
                   ))}
                 </div>
               </div>
