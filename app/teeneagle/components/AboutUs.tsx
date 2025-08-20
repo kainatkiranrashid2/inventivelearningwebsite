@@ -141,9 +141,11 @@ const About = () => {
 
               <div className="relative z-10">
                 <div className="mb-8 overflow-hidden rounded-2xl">
-                  <img
+                  <Image
                     src={feature.image}
                     alt={feature.title}
+                    width={400}
+                    height={192}
                     className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
@@ -183,7 +185,7 @@ const About = () => {
                 description:
                   "For younger students with age-appropriate materials",
                 gradient: "from-[#164e63] to-[#0e7490]",
-                image: "/images/aboutteeneagle/classroom.jpg",
+                image: "/images/aboutteeneagle/te1.png",
 
                 icon: "🌱",
               },
@@ -193,6 +195,8 @@ const About = () => {
                 description:
                   "For middle-level students with intermediate challenges",
                 gradient: "from-[#164e63] to-[#0e7490]",
+                image: "/images/aboutteeneagle/te2.png",
+
                 icon: "🌿",
               },
               {
@@ -200,6 +204,8 @@ const About = () => {
                 ageRange: "Ages 15–18",
                 description: "For older participants with advanced content",
                 gradient: "from-[#164e63] to-[#0e7490]",
+                image: "/images/aboutteeneagle/te3.jpg",
+
                 icon: "🌳",
               },
             ].map((category, index) => (
@@ -210,8 +216,14 @@ const About = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
 
                 <div className="relative z-10 text-center">
-                  <div className="text-4xl mb-6 group-hover:scale-125 transition-transform duration-500">
-                    {category.icon}
+                  <div className="mb-8 overflow-hidden rounded-2xl">
+                    <Image
+                      src={category.image}
+                      alt={category.category}
+                      width={400}
+                      height={192}
+                      className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
                   </div>
                   <h4 className="text-[28px] md:text-[32px] font-bold mb-4 tracking-tight">
                     {category.category}
