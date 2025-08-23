@@ -20,6 +20,7 @@ const Header = () => {
         { name: "Home", href: "/teeneagle" },
         { name: "Contest Categories", href: "/teeneagle/categories" },
         { name: "Resources & Workshops", href: "/teeneagle/resources" },
+        { name: "Registration", href: "/teeneagle/registration" },
       ],
     },
     {
