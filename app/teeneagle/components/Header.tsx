@@ -3,7 +3,7 @@ import React from "react";
 const Header = () => {
   return (
     <section
-      className="relative  bg-gradient-to-br bg-cover bg-center  from-[#AFDDE5] via-[#AFDDE5] to-[#0FA4AF]/30 overflow-hidden"
+      className="relative  bg-gradient-to-br bg-cover bg-center px-4  from-[#AFDDE5] via-[#AFDDE5] to-[#0FA4AF]/30 overflow-hidden"
       style={{
         backgroundImage: "url('/images/aboutteeneagle/pakistanfuture.png')",
       }}>

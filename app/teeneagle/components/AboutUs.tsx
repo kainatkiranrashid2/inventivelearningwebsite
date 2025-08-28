@@ -3,7 +3,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="relative bg-[#edf5fbf8]   py-20 lg:py-32 overflow-hidden">
+    <section className="relative bg-[#edf5fbf8] px-4   py-20 lg:py-32 overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
         {/* Hero Section */}
         <div className=" text-center mb-8 md:mb-12 lg:mb-16">

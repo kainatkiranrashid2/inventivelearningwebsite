@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <section className="relative bg-[#edf5fbf8]   py-20 lg:py-32 overflow-hidden">
+    <section className="relative bg-[#edf5fbf8] px-4  py-20 lg:py-32 overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
         {/* Modern Categories Section */}
         <div className="mb-24">
