@@ -2,7 +2,7 @@ import React from "react";
 
 const WhyInventiveLearning = () => {
   return (
-    <section className="relative bg-[#edf5fbf8] py-20 lg:py-32 overflow-hidden">
+    <section className="relative bg-[#edf5fbf8] py-28 lg:py-32 overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
         {/* Heading */}
         <div className="text-center mb-12 lg:mb-16">
