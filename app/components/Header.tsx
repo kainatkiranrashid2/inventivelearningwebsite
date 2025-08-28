@@ -17,7 +17,7 @@ const Header = () => {
       name: "TeenEagle",
       href: "/teeneagle",
       dropdown: [
-        { name: "Home", href: "/teeneagle" },
+        { name: "Introduction", href: "/teeneagle" },
         { name: "Contest Categories", href: "/teeneagle/categories" },
         { name: "Resources & Workshops", href: "/teeneagle/resources" },
         { name: "Registration", href: "/teeneagle/registration" },
@@ -27,7 +27,7 @@ const Header = () => {
       name: "WAICY",
       href: "/waicy",
       dropdown: [
-        { name: "Home", href: "/waicy" },
+        { name: "Introduction", href: "/waicy" },
         { name: "Contest Categories", href: "/waicy/categories" },
         { name: "Resources & Workshops", href: "/waicy/resources" },
       ],
