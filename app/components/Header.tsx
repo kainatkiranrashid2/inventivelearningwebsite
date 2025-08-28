@@ -32,6 +32,8 @@ const Header = () => {
         { name: "Resources & Workshops", href: "/waicy/resources" },
       ],
     },
+    { name: "About Us", href: "/aboutus" },
+    { name: "Why Inventive Learning", href: "/whyinventivelearning" },
     { name: "Contact Us", href: "/contact" },
   ];
 
