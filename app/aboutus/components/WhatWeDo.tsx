@@ -32,7 +32,9 @@ const WhatWeDo = () => {
             </span>
           </h3>
           <div className="grid md:grid-cols-2 gap-10">
-            <div className="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 p-10 rounded-3xl shadow-xl border border-white/40 hover:scale-105 transition-all duration-500">
+            <div
+              id="iksc"
+              className="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 p-10 rounded-3xl shadow-xl border border-white/40 hover:scale-105 transition-all duration-500">
               <h4 className="text-[24px] md:text-[28px] text-[#003135] font-bold mb-4 tracking-tight">
                 IKSC – International Kangaroo Science Contest
               </h4>
@@ -42,7 +44,9 @@ const WhatWeDo = () => {
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 p-10 rounded-3xl shadow-xl border border-white/40 hover:scale-105 transition-all duration-500">
+            <div
+              id="iklc"
+              className="bg-gradient-to-br from-purple-500/10 to-pink-500/10 p-10 rounded-3xl shadow-xl border border-white/40 hover:scale-105 transition-all duration-500">
               <h4 className="text-[24px] md:text-[28px] text-[#003135] font-bold mb-4 tracking-tight">
                 IKLC – International Kangaroo Linguistic Contest
               </h4>

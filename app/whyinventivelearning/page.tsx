@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "../components/Header";
+import Header from "./components/Header";
 
-const WhyInventiveLearning = () => {
+const page = () => {
   return (
     <>
       <Header />
@@ -9,4 +9,4 @@ const WhyInventiveLearning = () => {
   );
 };
 
-export default WhyInventiveLearning;
+export default page;
