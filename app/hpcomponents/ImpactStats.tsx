@@ -20,7 +20,7 @@ export default function ImpactStats() {
   ];
 
   return (
-    <section className="relative bg-gray-50 py-20 lg:py-28">
+    <section className="relative bg-gray-50 pb-20 lg:pb-28">
       <div className="container mx-auto px-6 text-center">
         <h2 className="text-[40px] sm:text-[48px] md:text-[56px] font-bold text-[#003135] mb-16 tracking-tight">
           Our{" "}
