@@ -26,7 +26,7 @@ const Header = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-24">
           <div className="relative overflow-hidden rounded-3xl shadow-2xl group">
             <Image
-              src="/images/aboutus/our-journey.jpg"
+              src="/images/aboutus/our-journey.png"
               alt="Our Journey"
               width={800}
               height={600}
