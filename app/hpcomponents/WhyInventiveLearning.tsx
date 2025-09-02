@@ -43,9 +43,7 @@ export default function WhyInventiveLearning() {
             <div
               key={i}
               className="group flex flex-col items-center text-center bg-white/80 backdrop-blur-xl p-10 rounded-3xl border border-white/40 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500">
-              <div className="mb-4 group-hover:scale-125 transition-transform duration-500">
-                {value.icon}
-              </div>
+              <div className="mb-4 ">{value.icon}</div>
               <h3 className="text-xl font-bold text-[#003135] mb-2">
                 {value.title}
               </h3>

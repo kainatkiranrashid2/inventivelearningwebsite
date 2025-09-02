@@ -30,6 +30,7 @@ const Header = () => {
         { name: "Introduction", href: "/waicy" },
         { name: "Contest Categories", href: "/waicy/categories" },
         { name: "Resources & Workshops", href: "/waicy/resources" },
+        { name: "WAICY Partners", href: "/waicy/partners" },
       ],
     },
     { name: "About Us", href: "/aboutus" },

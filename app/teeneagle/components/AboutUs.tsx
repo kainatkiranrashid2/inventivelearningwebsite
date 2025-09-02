@@ -387,9 +387,7 @@ const About = () => {
 
               <div className="relative z-10">
                 <div className="text-center mb-8">
-                  <div className="text-5xl mb-6 group-hover:scale-125 transition-transform duration-500 filter drop-shadow-lg">
-                    🏆
-                  </div>
+                  <div className="text-5xl mb-6  filter drop-shadow-lg">🏆</div>
                   <h4 className="text-[26px] md:text-[30px] text-[#003135] font-bold mb-6 tracking-tight">
                     Certificates & Recognition
                   </h4>
@@ -415,9 +413,7 @@ const About = () => {
 
               <div className="relative z-10">
                 <div className="text-center mb-8">
-                  <div className="text-5xl mb-6 group-hover:scale-125 transition-transform duration-500 filter drop-shadow-lg">
-                    🎓
-                  </div>
+                  <div className="text-5xl mb-6 filter drop-shadow-lg">🎓</div>
                   <h4 className="text-[26px] md:text-[30px] text-[#003135] font-bold mb-6 tracking-tight">
                     Academic Incentives
                   </h4>
