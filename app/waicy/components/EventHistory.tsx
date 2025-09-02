@@ -1,4 +1,4 @@
-import { TrendingUp, Users, Globe2, Calendar } from "lucide-react";
+import { Calendar } from "lucide-react";
 
 const EventHistory = () => {
   const yearlyData = [
@@ -50,7 +50,8 @@ const EventHistory = () => {
             </span>
           </h2>
           <p className="text-[18px] md:text-[20px] text-[#475569] max-w-4xl mx-auto leading-relaxed font-medium mb-8">
-            Since 2018, WAICY has grown from a small pilot to one of the world's largest youth AI competitions.
+            Since 2018, WAICY has grown from a small pilot to one of the
+            world&apos;s largest youth AI competitions.
           </p>
         </div>
 
@@ -75,7 +76,7 @@ const EventHistory = () => {
                         {data.year}
                       </h3>
                     </div>
-                    
+
                     <div className="grid grid-cols-3 gap-4 mb-4">
                       <div className="text-center">
                         <div className="text-lg font-bold text-[#0FA4AF] mb-1">
@@ -96,7 +97,7 @@ const EventHistory = () => {
                         <div className="text-sm text-[#475569]">Countries</div>
                       </div>
                     </div>
-                    
+
                     <p className="text-[#475569] text-base italic">
                       {data.highlight}
                     </p>
@@ -120,10 +121,13 @@ const EventHistory = () => {
               2024 Global Highlights
             </h3>
             <p className="text-[#475569] text-base leading-relaxed">
-              This remarkable growth reflects WAICY's global reputation and the passion of young learners using AI for real-world impact. 
-              In 2024, standout contributions came from students in{" "}
-              <span className="font-semibold text-[#0FA4AF]">Saudi Arabia, the U.S., India, and Greece</span>, 
-              showcasing innovation, technical skill, and social relevance.
+              This remarkable growth reflects WAICY&apos;s global reputation and
+              the passion of young learners using AI for real-world impact. In
+              2024, standout contributions came from students in{" "}
+              <span className="font-semibold text-[#0FA4AF]">
+                Saudi Arabia, the U.S., India, and Greece
+              </span>
+              , showcasing innovation, technical skill, and social relevance.
             </p>
           </div>
         </div>
