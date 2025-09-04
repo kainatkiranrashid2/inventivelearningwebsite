@@ -16,7 +16,7 @@ const Header = () => {
         <div className="flex flex-col items-center justify-center min-h-[600px] lg:min-h-screen text-center px-4 py-20">
           {/* Floating badge */}
           <div
-            className="inline-flex mt-5 items-center px-6 py-3 bg-white/20 backdrop-blur-md rounded-full 
+            className="invisible inline-flex mt-5 items-center px-6 py-3 bg-white/20 backdrop-blur-md rounded-full 
             text-white font-semibold text-sm mb-8 border border-white/30 shadow-lg
             hover:bg-white/30 transition-all duration-300">
             <svg

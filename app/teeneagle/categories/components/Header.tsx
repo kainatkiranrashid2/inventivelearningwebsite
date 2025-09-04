@@ -122,7 +122,7 @@ const Header = () => {
                   description:
                     "Celebrating students who express TeenEagle themes through creative works such as poems, reflective essays, posters, photographs, or short videos.",
                   subtitle:
-                    "Poetry, Short Prose, Photography, Film, Visual Art",
+                    "Poetry, Short Prose, Photography, Short Film, Visual Art",
                   gradient: "from-[#164e63] to-[#0e7490]",
                 },
                 {
@@ -133,14 +133,14 @@ const Header = () => {
                   subtitle: "Social Impact, Volunteering, Advocacy",
                   gradient: "from-[#0e7490] to-[#0FA4AF]",
                 },
-                {
-                  icon: "💡",
-                  title: "Innovation & Entrepreneurship",
-                  description:
-                    "Highlighting students who can persuasively pitch innovative ideas or business plans, demonstrating vision, impact, and strong communication skills.",
-                  subtitle: "Startups, Tech Ideas, Business Plans",
-                  gradient: "from-[#0FA4AF] to-[#AFDDE5]",
-                },
+                // {
+                //   icon: "💡",
+                //   title: "Innovation & Entrepreneurship",
+                //   description:
+                //     "Highlighting students who can persuasively pitch innovative ideas or business plans, demonstrating vision, impact, and strong communication skills.",
+                //   subtitle: "Startups, Tech Ideas, Business Plans",
+                //   gradient: "from-[#0FA4AF] to-[#AFDDE5]",
+                // },
                 {
                   icon: "🌱",
                   title: "Personal Growth & Resilience",

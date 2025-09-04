@@ -61,7 +61,8 @@ const About = () => {
             },
             {
               number: "60",
-              label: "Minute Exam",
+              label:
+                "Minute Exam includes 60–80 questions in the paper-based exam ",
               icon: "⏱️",
               gradient: "from-purple-500 to-pink-500",
             },
@@ -95,67 +96,6 @@ const About = () => {
                 <div className="text-[15px] md:text-[17px] text-[#475569] font-bold tracking-wide uppercase">
                   {stat.label}
                 </div>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Modern Feature Cards */}
-        <div className="grid lg:grid-cols-3 gap-8 mb-24">
-          {[
-            {
-              icon: "📚",
-              image: "/images/aboutteeneagle/classroom.jpg", // Use Image 2 or 3
-
-              title: "Resource-Based Learning",
-              description:
-                "Curated books and films build comprehensive language skills through engaging, age-appropriate content that makes learning enjoyable and effective.",
-              gradient: "from-[#0FA4AF]/10 to-[#164e63]/10",
-            },
-            {
-              icon: "⚖️",
-              image: "/images/aboutteeneagle/classroom-2.jpg", // Use Image 2 or 3
-
-              title: "Fair Competition",
-              description:
-                "Three distinct age categories ensure every student competes with peers at their level, creating equal opportunities for success and recognition.",
-              gradient: "from-[#164e63]/10 to-[#0e7490]/10",
-            },
-            {
-              icon: "🤝",
-              title: "Expert Partnership",
-              image: "/images/aboutteeneagle/partnership.png",
-
-              description:
-                "Inventive Learning serves as Pakistan's official representative, providing comprehensive support from registration to global finals preparation.",
-              gradient: "from-[#0e7490]/10 to-[#AFDDE5]/20",
-            },
-          ].map((feature, index) => (
-            <div
-              key={index}
-              className={`group relative bg-gradient-to-br ${feature.gradient} backdrop-blur-2xl p-10 rounded-3xl 
-              border border-white/40 hover:bg-white/90 hover:scale-105 hover:shadow-2xl 
-              hover:shadow-[#0FA4AF]/20 transition-all duration-700 cursor-pointer overflow-hidden`}>
-              <div className="absolute inset-0 bg-gradient-to-br from-white/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-3xl"></div>
-
-              <div className="relative z-10">
-                <div className="mb-8 overflow-hidden rounded-2xl">
-                  <Image
-                    src={feature.image}
-                    alt={feature.title}
-                    width={400}
-                    height={192}
-                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                </div>
-
-                <h3 className="text-[24px] md:text-[26px] text-[#003135] font-bold mb-6 tracking-tight">
-                  {feature.title}
-                </h3>
-
-                <p className="text-[17px] text-[#475569] leading-relaxed font-medium">
-                  {feature.description}
-                </p>
               </div>
             </div>
           ))}
@@ -261,6 +201,66 @@ const About = () => {
           </div>
         </div>
 
+        {/* Modern Feature Cards */}
+        <div className="grid lg:grid-cols-3 gap-8 mb-24">
+          {[
+            {
+              icon: "📚",
+              image: "/images/aboutteeneagle/classroom.jpg", // Use Image 2 or 3
+
+              title: "Resource-Based Learning",
+              description:
+                "Curated books and films build comprehensive language skills through engaging, age-appropriate content that makes learning enjoyable and effective.",
+              gradient: "from-[#0FA4AF]/10 to-[#164e63]/10",
+            },
+            {
+              icon: "⚖️",
+              image: "/images/aboutteeneagle/classroom-2.jpg", // Use Image 2 or 3
+
+              title: "Fair Competition",
+              description:
+                "Three distinct age categories ensure every student competes with peers at their level, creating equal opportunities for success and recognition.",
+              gradient: "from-[#164e63]/10 to-[#0e7490]/10",
+            },
+            {
+              icon: "🤝",
+              title: "Expert Partnership",
+              image: "/images/aboutteeneagle/partnership.png",
+
+              description:
+                "Inventive Learning serves as Pakistan's official representative, providing comprehensive support from registration to global finals preparation.",
+              gradient: "from-[#0e7490]/10 to-[#AFDDE5]/20",
+            },
+          ].map((feature, index) => (
+            <div
+              key={index}
+              className={`group relative bg-gradient-to-br ${feature.gradient} backdrop-blur-2xl p-10 rounded-3xl 
+              border border-white/40 hover:bg-white/90 hover:scale-105 hover:shadow-2xl 
+              hover:shadow-[#0FA4AF]/20 transition-all duration-700 cursor-pointer overflow-hidden`}>
+              <div className="absolute inset-0 bg-gradient-to-br from-white/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-3xl"></div>
+
+              <div className="relative z-10">
+                <div className="mb-8 overflow-hidden rounded-2xl">
+                  <Image
+                    src={feature.image}
+                    alt={feature.title}
+                    width={400}
+                    height={192}
+                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+
+                <h3 className="text-[24px] md:text-[26px] text-[#003135] font-bold mb-6 tracking-tight">
+                  {feature.title}
+                </h3>
+
+                <p className="text-[17px] text-[#475569] leading-relaxed font-medium">
+                  {feature.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
         {/* Modern Competition Journey */}
         <div className="mb-24">
           <div className="text-center mb-8 md:mb-12 lg:mb-16">

@@ -9,7 +9,7 @@ const Footer = () => {
       title: "TeenEagle",
       links: [
         { name: "Introduction", href: "/teeneagle" },
-        { name: "Contest Categories", href: "/teeneagle/categories" },
+        { name: "Competition Categories", href: "/teeneagle/categories" },
         { name: "Resources & Workshops", href: "/teeneagle/resources" },
         { name: "Registration", href: "/teeneagle/registration" },
       ],
@@ -18,7 +18,7 @@ const Footer = () => {
       title: "WAICY",
       links: [
         { name: "Introduction", href: "/waicy" },
-        { name: "Contest Categories", href: "/waicy/categories" },
+        { name: "Competition Categories", href: "/waicy/categories" },
         { name: "Resources & Workshops", href: "/waicy/resources" },
       ],
     },
