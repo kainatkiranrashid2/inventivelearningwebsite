@@ -6,7 +6,7 @@ const Header = () => {
     <section
       className="relative bg-gradient-to-br bg-cover bg-center px-4 from-[#AFDDE5] via-[#AFDDE5] to-[#0FA4AF]/30 overflow-hidden"
       style={{
-        backgroundImage: "url('/images/waicy/header.png')",
+        backgroundImage: "url('/images/waicy/resources.jpg')",
       }}>
       {/* Dark overlay for better text visibility */}
       <div className="absolute inset-0 bg-black/40"></div>
