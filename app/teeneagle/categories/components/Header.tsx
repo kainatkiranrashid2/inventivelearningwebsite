@@ -99,6 +99,9 @@ const Header = () => {
         shadow-lg hover:shadow-xl transition-all duration-300">
                 🇵🇰 Pakistan Spotlight Categories (Local Recognition)
               </div>
+              <p className="text-[18px] text-[#475569] mb-2 max-w-4xl mx-auto font-medium">
+                60 minute Exam includes 60–80 questions in the paper-based exam
+              </p>
               <p className="text-[18px] text-[#475569] max-w-4xl mx-auto font-medium">
                 Additional recognition areas introduced by Inventive Learning to
                 celebrate student achievements beyond the official TeenEagle

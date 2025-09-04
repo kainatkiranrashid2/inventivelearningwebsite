@@ -61,8 +61,7 @@ const About = () => {
             },
             {
               number: "60",
-              label:
-                "Minute Exam includes 60–80 questions in the paper-based exam ",
+              label: "Minute Exam ",
               icon: "⏱️",
               gradient: "from-purple-500 to-pink-500",
             },
@@ -462,17 +461,34 @@ const About = () => {
               </h5>
               <div className="grid sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
                 {[
-                  { item: "Competition guidelines", icon: "📋" },
-                  { item: "Age-specific preparation resources", icon: "📚" },
-                  { item: "Sample papers & instructions", icon: "📄" },
+                  {
+                    item: "Competition guidelines",
+                    image: "/images/aboutteeneagle/competition_guidelines.jpg",
+                  },
+                  {
+                    item: "Age-specific preparation resources",
+                    image: "/images/aboutteeneagle/age_specific_resources.jpg",
+                  },
+                  {
+                    item: "Sample papers & instructions",
+                    image: "/images/aboutteeneagle/sample_papers.jpg",
+                  },
                 ].map((benefit, index) => (
                   <div
                     key={index}
                     className="relative bg-gradient-to-br from-white/80 to-white/60 p-6 rounded-2xl border border-white/50 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-500 group">
                     <div className="absolute inset-0 bg-gradient-to-br from-[#0FA4AF]/5 to-[#164e63]/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     <div className="relative text-center">
-                      <div className="text-2xl mb-3 group-hover:scale-125 transition-transform duration-300">
-                        {benefit.icon}
+                      <div className="mb-4 group-hover:scale-105 transition-transform duration-300">
+                        <div className="w-20 h-20 mx-auto rounded-xl overflow-hidden bg-white shadow-md border border-gray-100">
+                          <Image
+                            src={benefit.image}
+                            alt={benefit.item}
+                            width={80}
+                            height={80}
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
                       </div>
                       <p className="text-[16px] md:text-[17px] text-[#475569] font-bold">
                         {benefit.item}
@@ -486,8 +502,8 @@ const About = () => {
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <button
                 className="group relative px-12 py-5 bg-gradient-to-r from-[#164e63] via-[#0e7490] to-[#0FA4AF]
-                  text-white font-bold text-[19px] rounded-2xl transition-all duration-500 
-                    hover:shadow-2xl hover:shadow-[#0FA4AF]/40 hover:scale-110 overflow-hidden border-2 border-white/20">
+        text-white font-bold text-[19px] rounded-2xl transition-all duration-500 
+          hover:shadow-2xl hover:shadow-[#0FA4AF]/40 hover:scale-110 overflow-hidden border-2 border-white/20">
                 <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <span className="relative z-10 flex items-center tracking-wide">
                   Register Your School
@@ -508,8 +524,8 @@ const About = () => {
 
               <button
                 className="px-10 py-5 text-[#024950] font-bold text-[17px] border-3 border-[#024950] 
-                rounded-2xl hover:bg-[#024950] hover:text-white transition-all duration-500 
-                hover:shadow-lg hover:scale-105 tracking-wide">
+      rounded-2xl hover:bg-[#024950] hover:text-white transition-all duration-500 
+      hover:shadow-lg hover:scale-105 tracking-wide">
                 Download Guidebook
               </button>
             </div>
