@@ -17,7 +17,25 @@ const Header = () => {
       <div className="absolute top-1/3 right-1/4 w-32 h-32 bg-white/15 rounded-full blur-xl"></div>
 
       <div className="container mx-auto relative z-10">
-        <div className="flex flex-col items-center justify-center min-h-[600px] lg:min-h-screen text-center px-4 py-28 lg:py-32">
+        <div className="flex flex-col items-center justify-center min-h-[600px] lg:min-h-screen text-center px-4 py-28 lg:py-16">
+          <div
+            className="invisible inline-flex mt-5 items-center px-6 py-3 bg-white/20 backdrop-blur-md rounded-full 
+            text-white font-semibold text-sm mb-8 border border-white/30 shadow-lg
+            hover:bg-white/30 transition-all duration-300">
+            <svg
+              className="w-5 h-5 mr-2 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24">
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              />
+            </svg>
+            AI Education for All
+          </div>
           {/* Main heading */}
           <h1
             className="text-[36px] sm:text-[44px] md:text-[52px] lg:text-[60px] xl:text-[68px] 2xl:text-[76px] 
