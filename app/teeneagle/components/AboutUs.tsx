@@ -556,11 +556,11 @@ const About = () => {
                   <span className="text-4xl">🌍</span>
                 </div>
                 <p className="text-[20px] text-left md:text-[22px] font-medium leading-relaxed max-w-4xl mx-auto">
-                  The <strong>Global Finals</strong> is an annual international
-                  event hosted in countries such as the
-                  <strong> United Kingdom, United States, and Thailand</strong>,
-                  bringing together top-performing students for a week of{" "}
-                  <strong>competition, learning, and cultural exchange</strong>.
+                  The <strong> Global Finals</strong> is an annual international
+                  event, hosted in the United Kingdom, the United States, and in
+                  Asia <strong> (with the host city varying each year).</strong>
+                  , It brings together top-performing students for a week of
+                  competition, learning, and cultural exchange.
                 </p>
               </div>
 
