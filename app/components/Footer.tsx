@@ -52,9 +52,12 @@ const Footer = () => {
             <div className="mt-4 text-sm leading-relaxed text-gray-300">
               <p>Inventive Learning</p>
               <p>1st Floor, Plaza 114, Main Boulevard</p>
-              <p>Phase 06, D.H.A. Lahore</p>
-              <p>Email: info@kangaroopakistan.org</p>
-              <p>Tel: +92 42 37180505, +92 42 37180506</p>
+              <p>Phase 06, DHA Lahore</p>
+              <p>Postal Code: 54792</p>
+              <p>Tel: +92 42 37180505 | +92 42 37180506</p>
+              <p>Cell: +92-333-2111399 | +92-321-8403033</p>
+              <p>Email: teeneagle@inventivelearning.org</p>
+              <p>Email: waicy@inventivelearning.org</p>
             </div>
           </div>
 
