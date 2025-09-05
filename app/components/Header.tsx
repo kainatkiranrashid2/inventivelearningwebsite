@@ -216,18 +216,23 @@ const Header = () => {
                   <div key={item.name}>
                     {item.dropdown ? (
                       <div>
-                        <button
-                          onClick={() => handleDropdownToggle(item.name)}
-                          className="flex items-center justify-between w-full text-left text-[#003135] font-medium py-3 px-2 hover:text-[#0FA4AF] hover:bg-white rounded-md transition-colors duration-200">
-                          <span className="text-base sm:text-lg">
+                        <div className="flex items-center">
+                          <Link
+                            href={item.href}
+                            className="flex-1 text-[#003135] font-medium py-3 px-2 text-base sm:text-lg hover:text-[#0FA4AF] hover:bg-white rounded-l-md transition-colors duration-200"
+                            onClick={handleMobileNavClick}>
                             {item.name}
-                          </span>
-                          <ChevronDown
-                            className={`h-4 w-4 sm:h-5 sm:w-5 transition-transform duration-200 ${
-                              activeDropdown === item.name ? "rotate-180" : ""
-                            }`}
-                          />
-                        </button>
+                          </Link>
+                          <button
+                            onClick={() => handleDropdownToggle(item.name)}
+                            className="text-[#003135] font-medium py-3 px-2 hover:text-[#0FA4AF] hover:bg-white rounded-r-md transition-colors duration-200 border-l border-gray-300">
+                            <ChevronDown
+                              className={`h-4 w-4 sm:h-5 sm:w-5 transition-transform duration-200 ${
+                                activeDropdown === item.name ? "rotate-180" : ""
+                              }`}
+                            />
+                          </button>
+                        </div>
                         {activeDropdown === item.name && (
                           <div className="ml-4 mt-2 space-y-1 bg-white rounded-md p-2 relative z-30">
                             {item.dropdown.map((dropdownItem) => (
