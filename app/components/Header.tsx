@@ -216,36 +216,26 @@ const Header = () => {
                   <div key={item.name}>
                     {item.dropdown ? (
                       <div>
-                        <div className="flex items-center">
-                          <Link
-                            href={item.href}
-                            className="flex-1 text-[#003135] font-medium py-3 px-2 text-base sm:text-lg hover:text-[#0FA4AF] hover:bg-white rounded-l-md transition-colors duration-200"
-                            onClick={handleMobileNavClick}>
-                            {item.name}
-                          </Link>
-                          <button
-                            onClick={() => handleDropdownToggle(item.name)}
-                            className="text-[#003135] font-medium py-3 px-2 hover:text-[#0FA4AF] hover:bg-white rounded-r-md transition-colors duration-200 border-l border-gray-300">
-                            <ChevronDown
-                              className={`h-4 w-4 sm:h-5 sm:w-5 transition-transform duration-200 ${
-                                activeDropdown === item.name ? "rotate-180" : ""
-                              }`}
-                            />
-                          </button>
+                        {/* Main page link */}
+                        <Link
+                          href={item.href}
+                          className="block text-[#003135] font-medium py-3 px-2 text-base sm:text-lg hover:text-[#0FA4AF] hover:bg-white rounded-md transition-colors duration-200"
+                          onClick={handleMobileNavClick}>
+                          {item.name}
+                        </Link>
+                        
+                        {/* Sub-pages */}
+                        <div className="ml-4 space-y-1">
+                          {item.dropdown.slice(1).map((dropdownItem) => (
+                            <Link
+                              key={dropdownItem.name}
+                              href={dropdownItem.href}
+                              className="block text-[#475569] py-2 px-3 text-sm hover:text-[#0FA4AF] hover:bg-white rounded-md transition-colors duration-200"
+                              onClick={handleMobileNavClick}>
+                              {dropdownItem.name}
+                            </Link>
+                          ))}
                         </div>
-                        {activeDropdown === item.name && (
-                          <div className="ml-4 mt-2 space-y-1 bg-white rounded-md p-2 relative z-30">
-                            {item.dropdown.map((dropdownItem) => (
-                              <Link
-                                key={dropdownItem.name}
-                                href={dropdownItem.href}
-                                className="block text-[#024950] py-2 px-3 text-sm sm:text-base hover:text-[#0FA4AF] hover:bg-[#AFDDE5] rounded-md transition-colors duration-200"
-                                onClick={handleMobileNavClick}>
-                                {dropdownItem.name}
-                              </Link>
-                            ))}
-                          </div>
-                        )}
                       </div>
                     ) : (
                       <Link
