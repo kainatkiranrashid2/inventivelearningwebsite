@@ -315,7 +315,7 @@ const About = () => {
                     {[
                       "Paper-based exam conducted within schools",
                       "February 2026 across Pakistan",
-                      "60 multiple-choice questions in 60 minutes",
+                      "60-80 multiple-choice questions in 60 minutes",
                       "Tests reading comprehension, grammar & critical thinking",
                       "Based on designated books and films for each age group",
                     ].map((item, index) => (
