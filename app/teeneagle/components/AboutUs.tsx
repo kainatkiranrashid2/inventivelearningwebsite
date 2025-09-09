@@ -523,12 +523,15 @@ const About = () => {
                 </span>
               </button>
 
-              <button
-                className="px-10 py-5 text-[#024950] font-bold text-[17px] border-3 border-[#024950] 
+              <a
+                href="https://drive.google.com/file/d/1kYKUvHAKcRQA3rH4RtTBN5_KCZfJU4r-/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-10 py-5 text-[#024950] font-bold text-[17px] border-3 border-[#024950] 
       rounded-2xl hover:bg-[#024950] hover:text-white transition-all duration-500 
       hover:shadow-lg hover:scale-105 tracking-wide">
                 Download Guidebook
-              </button>
+              </a>
             </div>
           </div>
         </div>

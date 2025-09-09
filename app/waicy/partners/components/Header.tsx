@@ -61,14 +61,16 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 items-center">
-            <Link
-              href="/waicy"
+            <a
+              href="https://drive.google.com/file/d/1jgSgxLhDlsPlJz83d9223ac1zJn9t16k/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group relative px-8 py-4 bg-[#964734]
               text-white font-semibold text-[18px] rounded-2xl shadow-xl shadow-[#964734]/30
               hover:shadow-2xl hover:shadow-[#964734]/40 hover:scale-105 
               transition-all duration-300 overflow-hidden min-w-[200px]">
               <span className="relative z-10 flex items-center justify-center">
-                Back to WAICY
+                Download Guidebook
                 <svg
                   className="w-5 h-5 ml-2 "
                   fill="none"
@@ -82,7 +84,7 @@ const Header = () => {
                   />
                 </svg>
               </span>
-            </Link>
+            </a>
 
             <Link
               href="/contact"

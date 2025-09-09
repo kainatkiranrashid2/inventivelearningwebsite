@@ -84,13 +84,15 @@ const Header = () => {
               </span>
             </Link>
 
-            <Link
-              href="/waicy"
+            <a
+              href="https://drive.google.com/file/d/1jgSgxLhDlsPlJz83d9223ac1zJn9t16k/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-4 bg-white/20 backdrop-blur-md text-white font-semibold 
               text-[18px] rounded-2xl border-2 border-white/40 hover:bg-white/30 hover:border-white/60
               transition-all duration-300 min-w-[200px]">
-              Back to WAICY
-            </Link>
+              Download Guidebook
+            </a>
           </div>
         </div>
       </div>

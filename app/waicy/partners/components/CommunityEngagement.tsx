@@ -1,4 +1,4 @@
-import { Building2, GraduationCap, Users, Globe } from "lucide-react";
+import { Building2, GraduationCap, Users, Globe, ExternalLink } from "lucide-react";
 
 const CommunityEngagement = () => {
   const institutionalHosts = [
@@ -37,18 +37,23 @@ const CommunityEngagement = () => {
     {
       name: "ReadyAI",
       role: "Core Curriculum Partner",
+      link: "https://www.waicy.org/resources/#otherResources",
       description:
         "Providing the foundational AI curriculum and educational framework.",
     },
     {
       name: "Wafy",
       role: "European Co-host",
+      link: "https://readyai.com/",
+
       description:
         "Co-host of European editions, expanding WAICY's reach across Europe.",
     },
     {
-      name: "Certopus",
+      name: "AI4k12",
       role: "Credentialing Partner",
+      link: "https://ai4k12.org/resources/list-of-resources/",
+
       description:
         "Credentialing partner for secure digital certificates and recognition.",
     },
@@ -111,19 +116,28 @@ const CommunityEngagement = () => {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {technicalPartners.map((partner, i) => (
-              <div
+              <a
                 key={i}
-                className="group bg-white/80 backdrop-blur-xl rounded-3xl p-8 border border-white/40 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500 text-center">
-                <h4 className="text-xl font-bold text-[#003135] mb-3">
-                  {partner.name}
-                </h4>
+                href={partner.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group bg-white/80 backdrop-blur-xl rounded-3xl p-8 border border-white/40 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500 text-center cursor-pointer hover:border-[#0FA4AF]/60">
+                <div className="flex items-center justify-center mb-3">
+                  <h4 className="text-xl font-bold text-[#003135] mr-2">
+                    {partner.name}
+                  </h4>
+                  <ExternalLink className="w-5 h-5 text-[#0FA4AF] group-hover:text-[#164e63] transition-colors duration-300" />
+                </div>
                 <p className="text-[#0FA4AF] font-semibold text-sm mb-4">
                   {partner.role}
                 </p>
-                <p className="text-[#475569] text-base leading-relaxed">
+                <p className="text-[#475569] text-base leading-relaxed mb-4">
                   {partner.description}
                 </p>
-              </div>
+                <div className="text-sm text-[#0FA4AF] font-medium group-hover:text-[#164e63] transition-colors duration-300">
+                  Click to visit website →
+                </div>
+              </a>
             ))}
           </div>
         </div>
