@@ -45,14 +45,12 @@ const Header = () => {
                 {" "}
                 WAICY (World Artificial Intelligence Competition for Youth)
               </span>{" "}
-              and <span className="font-bold text-[#0FA4AF]">TeenEagle</span>,
-              giving students access to global platforms where they can showcase
-              creativity, innovation, and communication skills.
-            </p>
-            <p className="text-[17px] md:text-[19px] text-[#475569] leading-relaxed font-medium">
-              Our vision is to make world-class learning opportunities
-              accessible to every student in Pakistan, empowering them to become
-              confident, innovative, and globally connected individuals.
+              and{" "}
+              <span className="font-bold text-[#0FA4AF]">
+                TeenEagle – English Olympiad{" "}
+              </span>
+              , giving students access to global platforms where they can
+              showcase creativity, innovation, and communication skills.
             </p>
           </div>
         </div>

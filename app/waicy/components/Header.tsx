@@ -52,7 +52,7 @@ const Header = () => {
             className="text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] 
             text-white font-medium mb-12 max-w-5xl leading-relaxed">
             Empowering students aged 6-18 to use AI for solving real-world
-            problems.
+            problems,
             <span className="text-white font-semibold">
               {" "}
               Making AI education accessible, inclusive, and impactful

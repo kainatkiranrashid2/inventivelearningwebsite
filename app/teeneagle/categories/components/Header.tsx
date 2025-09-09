@@ -64,6 +64,13 @@ const Header = () => {
                     "Progressive rounds where students spell increasingly complex words, testing their vocabulary, memory, and accuracy.",
                   gradient: "from-[#AFDDE5]/20 to-[#0FA4AF]/10",
                 },
+                {
+                  icon: "🌟",
+                  title: "TeenEagle Impact Project",
+                  description:
+                    "The Impact Project is a dedicated TeenEagle initiative where students design and implement community-focused projects. Drawing inspiration from the themes, lessons, and values found in the competition’s books and movies, students apply what they’ve learned to real-life challenges. This project provides a platform for young learners to use critical thinking, creativity, and leadership to drive positive change and showcase their commitment to social responsibility.",
+                  gradient: "from-[#0FA4AF]/10 to-[#164e63]/10",
+                },
               ].map((event, index) => (
                 <div
                   key={index}

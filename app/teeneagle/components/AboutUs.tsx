@@ -396,10 +396,11 @@ const About = () => {
                     "Certificate of participation for all students",
                     "Detailed performance report for every participant",
                     "Medal certificates (Gold, Silver, Bronze) for high achievers",
+                    "All gold medal winners wil get 10% discount",
                     "Top 5 students in each category receive 20%–100% fee discounts for Global Finals",
                   ].map((item, index) => (
                     <li key={index}>
-                      <span>{item}</span>
+                      <span className="capitalize">{item}</span>
                     </li>
                   ))}
                 </div>

@@ -1,6 +1,13 @@
 import React from "react";
+import { useRouter } from "next/navigation";
 
 const Header = () => {
+  const router = useRouter();
+
+  const handleLearnMore = () => {
+    router.push("/teeneagle/categories");
+  };
+
   return (
     <section
       className="relative  bg-gradient-to-br bg-cover bg-center px-4  from-[#AFDDE5] via-[#AFDDE5] to-[#0FA4AF]/30 overflow-hidden"
@@ -77,6 +84,7 @@ const Header = () => {
             </button>
 
             <button
+              onClick={handleLearnMore}
               className="px-8 py-4 bg-white/20 backdrop-blur-md text-white font-semibold 
               text-[18px] rounded-2xl border-2 border-white/40 hover:bg-white/30 hover:border-white/60
               transition-all duration-300 min-w-[200px]">

@@ -65,12 +65,14 @@ const Header = () => {
               </tbody>
             </table>
           </div>
-          <div className="mt-10 text-[16px] md:text-[18px] text-[#475569] font-medium leading-relaxed text-center">
-            <p>All participating students receive:</p>
-            <ul className="list-disc pl-6 mt-2 space-y-2 inline-block text-left">
-              <li>An official Certificate of Participation</li>
-              <li>A personalized Performance Report Card</li>
-            </ul>
+          <div className="flex items-center">
+            <div className="mt-10 text-[16px] md:text-[18px] text-[#475569] font-medium leading-relaxed mx-auto flex flex-col items-start">
+              <p className="">All participating students receive:</p>
+              <ul className="list-disc pl-6 mt-2 space-y-2 inline-block text-left">
+                <li>An official Certificate of Participation</li>
+                <li>A personalized Performance Report Card</li>
+              </ul>
+            </div>
           </div>
         </div>
         {/* Global Finals Qualification */}

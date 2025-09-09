@@ -24,10 +24,11 @@ const CommunityEngagement = () => {
       icon: <Users className="w-8 h-8 text-[#0FA4AF]" />,
     },
     {
-      name: "Academic Quests",
-      location: "Pakistan",
+      name: "Fundão Municipality & UNESCO Institute for Lifelong Learning ",
+      location: "Portugal (Europe)",
       role: "Regional Coordinator",
-      description: "Leading outreach across South Asia.",
+      description:
+        "Host of WAICY Europe, a landmark event that brought together governments, educators, and global institutions to expand AI education in Europe.",
       icon: <Globe className="w-8 h-8 text-[#0FA4AF]" />,
     },
   ];

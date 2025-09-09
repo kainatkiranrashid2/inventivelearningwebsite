@@ -55,7 +55,7 @@ const Footer = () => {
               <p>Phase 06, DHA Lahore</p>
               <p>Postal Code: 54792</p>
               <p>Tel: +92 42 37180505 | +92 42 37180506</p>
-              <p>Cell: +92-333-2111399 | +92-321-8403033</p>
+              <p>Cell: +923332111399 | +923218403033</p>
               <p>Email: teeneagle@inventivelearning.org</p>
               <p>Email: waicy@inventivelearning.org</p>
             </div>

@@ -51,9 +51,27 @@ const ParticipationDetails = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {details.map((detail, i) => (
+          {/* First 3 items */}
+          {details.slice(0, 3).map((detail, i) => (
             <div
               key={i}
+              className="group bg-white/80 backdrop-blur-xl rounded-3xl p-8 border border-white/40 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500">
+              <div className="mb-6 ">{detail.icon}</div>
+              <h3 className="text-xl font-bold text-[#003135] mb-4">
+                {detail.title}
+              </h3>
+              <p className="text-[#475569] text-base leading-relaxed">
+                {detail.description}
+              </p>
+            </div>
+          ))}
+        </div>
+        
+        {/* Bottom 2 items - centered */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 max-w-4xl mx-auto">
+          {details.slice(3, 5).map((detail, i) => (
+            <div
+              key={i + 3}
               className="group bg-white/80 backdrop-blur-xl rounded-3xl p-8 border border-white/40 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-500">
               <div className="mb-6 ">{detail.icon}</div>
               <h3 className="text-xl font-bold text-[#003135] mb-4">

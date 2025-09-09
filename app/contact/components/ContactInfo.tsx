@@ -48,9 +48,9 @@ const ContactInfo = () => {
                 <p className="font-semibold text-[#003135] mb-1">
                   Cell / WhatsApp:
                 </p>
-                <p>+92-333-2111399</p>
-                <p>+92-321-8403033</p>
-                <p>+92 319 5080077</p>
+                <p>+923332111399</p>
+                <p>+923218403033</p>
+                <p>+923195080077</p>
               </div>
             </div>
           </div>
