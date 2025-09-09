@@ -74,6 +74,30 @@ const Header = () => {
           </div>
         </div>
 
+        {/* Download Resources 2025-2026 */}
+        <div className="relative bg-gradient-to-br from-[#0FA4AF]/20 via-white/60 to-[#164e63]/15 backdrop-blur-2xl p-10 rounded-3xl border border-white/40 text-center shadow-xl overflow-hidden mb-16">
+          <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-3xl"></div>
+          <div className="relative z-10">
+            <div className="text-4xl mb-4">📥</div>
+            <h4 className="text-[22px] md:text-[26px] text-[#003135] font-bold mb-6 tracking-tight">
+              Download Resources 2025-2026
+            </h4>
+            <p className="text-[17px] md:text-[19px] text-[#475569] leading-relaxed font-medium max-w-3xl mx-auto mb-8">
+              Access all the preparation materials, guidelines, and resources
+              you need for the 2025-2026 TeenEagle competition.
+            </p>
+            <a
+              href="https://drive.google.com/file/d/139UbQrCBYUHoG0Iez4dhmEQaJ2zZnSV9/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 bg-gradient-to-r from-[#0FA4AF] to-[#164e63] text-white px-8 py-4 rounded-2xl font-semibold text-[16px] md:text-[18px] hover:from-[#164e63] hover:to-[#0FA4AF] hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+              <span>📄</span>
+              Download Resources
+              <span>↗</span>
+            </a>
+          </div>
+        </div>
+
         {/* Exam Reminder */}
         <div className="relative bg-gradient-to-br from-[#AFDDE5]/30 via-white/50 to-[#0FA4AF]/20 backdrop-blur-2xl p-10 rounded-3xl border border-white/40 text-center shadow-xl overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-3xl"></div>

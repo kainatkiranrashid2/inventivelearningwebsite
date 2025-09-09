@@ -60,7 +60,7 @@ const WhatWeDo = () => {
           <div className="text-center mt-10">
             <Link
               target="_blank"
-              href="https://enrollments.kangaroopakistan.org/"
+              href="https://www.kangaroopakistan.org/"
               className="inline-block bg-gradient-to-r from-[#0FA4AF] to-[#164e63] text-white font-semibold text-lg px-8 py-4 rounded-2xl shadow-lg hover:opacity-90 transition">
               Register for IKSC & IKLC
             </Link>
