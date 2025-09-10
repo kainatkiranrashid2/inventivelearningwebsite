@@ -502,9 +502,10 @@ const About = () => {
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <button
+                onClick={() => window.open('https://enrollments.inventivelearning.org/', '_blank')}
                 className="group relative px-12 py-5 bg-gradient-to-r from-[#164e63] via-[#0e7490] to-[#0FA4AF]
         text-white font-bold text-[19px] rounded-2xl transition-all duration-500 
-          hover:shadow-2xl hover:shadow-[#0FA4AF]/40 hover:scale-110 overflow-hidden border-2 border-white/20">
+          hover:shadow-2xl hover:shadow-[#0FA4AF]/40 hover:scale-110 overflow-hidden border-2 border-white/20 cursor-pointer">
                 <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <span className="relative z-10 flex items-center tracking-wide">
                   Register Your School
