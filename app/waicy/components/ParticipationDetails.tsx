@@ -23,7 +23,7 @@ const ParticipationDetails = () => {
     {
       title: "Project Requirements",
       description:
-        "No robots or physical models are needed. Submissions can include AI-powered apps, generative art, or videos—so long as they use AI to tackle a real-world issue.",
+        "Submissions can include AI-powered apps, generative art, or videos—so long as they use AI to tackle a real-world issue. Students are encouraged to design and build robotics projects or physical models as part of their WAICY submission. These models can showcase how AI works in real life. Since the models cannot be submitted physically, participants should create a short video demonstration of their prototype and present it along with their project report and presentation.",
       icon: <Laptop className="w-10 h-10 text-[#0FA4AF]" />,
     },
     {
@@ -66,7 +66,7 @@ const ParticipationDetails = () => {
             </div>
           ))}
         </div>
-        
+
         {/* Bottom 2 items - centered */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 max-w-4xl mx-auto">
           {details.slice(3, 5).map((detail, i) => (
