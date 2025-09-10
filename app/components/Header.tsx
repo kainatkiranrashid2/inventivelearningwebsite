@@ -93,7 +93,7 @@ const Header = () => {
   };
 
   const handleMobileNavClick = () => {
-    console.log('Mobile nav link clicked, closing menu');
+    console.log("Mobile nav link clicked, closing menu");
     setIsMenuOpen(false);
     setActiveDropdown(null);
   };
@@ -181,7 +181,7 @@ const Header = () => {
             {/* Desktop CTA */}
             <div className="hidden sm:flex items-center space-x-3 order-3">
               <Link
-                href="https://enrollments.kangaroopakistan.org/"
+                href="https://enrollments.inventivelearning.org/"
                 target="_blank"
                 className="block w-full text-center px-6 py-3 bg-[#964734] text-white font-semibold rounded-md transition-all duration-200 hover:bg-[#0FA4AF]">
                 Sign In
@@ -192,7 +192,10 @@ const Header = () => {
             <div className="flex items-center xl:hidden order-1 lg:order-3">
               <button
                 onClick={() => {
-                  console.log('Mobile menu button clicked, current state:', isMenuOpen);
+                  console.log(
+                    "Mobile menu button clicked, current state:",
+                    isMenuOpen
+                  );
                   setIsMenuOpen(!isMenuOpen);
                 }}
                 className="p-2 text-[#003135] hover:text-[#0FA4AF] transition-colors duration-200 rounded-md hover:bg-[#AFDDE5] relative z-50"
@@ -223,7 +226,7 @@ const Header = () => {
                           onClick={handleMobileNavClick}>
                           {item.name}
                         </Link>
-                        
+
                         {/* Sub-pages */}
                         <div className="ml-4 space-y-1">
                           {item.dropdown.slice(1).map((dropdownItem) => (
@@ -251,7 +254,7 @@ const Header = () => {
                 {/* Mobile CTA */}
                 <div className="pt-4 border-t border-gray-200 mt-4">
                   <Link
-                    href="https://enrollments.kangaroopakistan.org/"
+                    href="https://enrollments.inventivelearning.org/"
                     target="_blank"
                     className="block w-full text-center px-6 py-3 bg-[#964734] text-white font-semibold rounded-md transition-all duration-200 hover:bg-[#0FA4AF]"
                     onClick={handleMobileNavClick}>
